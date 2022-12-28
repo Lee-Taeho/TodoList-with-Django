@@ -4,4 +4,7 @@ from django.http import HttpResponse, HttpResponseRedirect
 # Create your views here.
 
 def index(request):
-    return HttpResponse("my first to_do_app page!")
+    return render(request, "my_to_do_app/index.html")
+
+
+
